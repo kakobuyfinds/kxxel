@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <title>JoyaGoo spreadsheet | Finds, Size Checks &amp; QC Guide</title>
+  <meta name="description" content="Browse 10 fashion categories with this JoyaGoo spreadsheet guide. Check product links, compare measurements, read QC photos and estimate your delivered cost.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JoyaGoo spreadsheet | Finds, Size Checks &amp; QC Guide">
+  <meta property="og:description" content="Find the right category, verify the product link and know what to check before you order.">
+  <meta property="og:image" content="https://static.nike.com/a/images/w_600,f_auto,q_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png">
+  <meta property="og:image:alt" content="Side profile of a white Nike Air Force 1 ’07 sneaker">
+  <link rel="preconnect" href="https://static.nike.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23162832'/%3E%3Cpath d='M18 16h28v7H18zm0 12h28v7H18zm0 12h18v7H18z' fill='%23cdf78a'/%3E%3C/svg%3E">
+  <!--
+    index.html
+    Search research for “JoyaGoo spreadsheet”:
+    Direct Google results were inaccessible. These ten relevant web results
+    informed the editorial plan. Google first-page positions were unverified.
+    joyagoosheets.com — category browsing and QC imagery
+    sheetjoyagoo.com — legacy JoyaBuy wording and fashion categories
+    www.joyagoo--spreadsheet.com — marketplace discovery (search result only)
+    joyago.makeup — category comparisons and apparel measurements
+    rep.tools/guides/joyagoo-spreadsheet — stale links and seller identifiers
+    joyagoo.delivery — W2C terminology and shopping workflow
+    joyagoochina.org — source IDs and seller photos versus QC
+    ssfinds.com/joyagoo-spreadsheet — product links and shipping questions
+    joyagoospreadsheet.gg — catalog structure and category navigation
+    joyagoo.io — shoes, clothing and accessories taxonomy
+    Secondary keywords: JoyaGoo finds guide, JoyaGoo product links,
+    JoyaGoo QC photos, JoyaGoo shipping estimate.
+    Long-tail topics used across the page:
+    Fit: sneaker insole length, sneaker toe room, hoodie chest width,
+    sweater sleeve length, T-shirt shoulder width, jacket layering room,
+    pants front rise, flat waistband measurement, jersey chest fit.
+    Accessories: cap circumference and closure, bracelet fit range,
+    enamel bracelet clasp, cap panel seams.
+    Listing checks: old JoyaBuy link, original marketplace item ID,
+    Weidian seller link, Taobao product variant, 1688 size options.
+    Photo checks: warehouse QC photos, seller sample photos, shoe outsole view,
+    clothing seam finish, warehouse return window, documented provenance.
+    Delivery: domestic delivery cost, packed parcel dimensions, billable weight,
+    international shipping quote, destination postcode, separate handling fees.
+  -->
+  <style>
+    :root {
+      color-scheme: light;
+      --paper:#f5f2e8; --white:#fffdf8; --ink:#162832; --muted:#46565c;
+      --line:#ccd2c8; --lime:#cdf78a; --warm:#ffcfaa; --green:#324f32;
+    }
+    * { box-sizing:border-box }
+    body { margin:0; background:var(--paper); color:var(--ink); font:1rem/1.6 system-ui,sans-serif }
+    a { color:inherit }
+    img { display:block; max-width:100%; height:auto }
+    figure { margin:0 }
+    h1,h2,h3,p { margin:0 }
+    h1,h2,h3 { line-height:1.12; text-wrap:balance }
+    h2 { font-size:clamp(1.65rem,4vw,2.65rem); letter-spacing:-.04em }
+    h3 { font-size:1.25rem }
+    :focus-visible { outline:3px solid #965024; outline-offset:4px }
+    .wrap { width:min(72rem,calc(100% - 2rem)); margin-inline:auto }
+    .bar,.footer { background:var(--white); border-block-end:1px solid var(--line) }
+    .bar .wrap,.footer .wrap { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:.6rem 1rem; padding-block:.8rem }
+    .wordmark { display:inline-flex; align-items:center; gap:.55rem; min-height:44px; font-weight:800; text-decoration:none }
+    .wordmark::before { content:""; width:.75rem; height:.75rem; background:#62883e; border-radius:50% }
+    .label { font-size:.75rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase }
+    .hero { background:var(--ink); color:var(--white) }
+    .hero .wrap { display:grid; grid-template-columns:1.35fr .65fr; gap:clamp(1rem,4vw,3rem); align-items:center; padding-block:clamp(1.6rem,5vw,3.8rem) }
+    .hero .label { color:var(--lime) }
+    h1 { margin:.35rem 0 .8rem; font-size:clamp(2.3rem,6.3vw,5rem); letter-spacing:-.065em }
+    .intro { max-width:57ch; color:#e5ede7 }
+    .button { display:inline-flex; align-items:center; min-height:44px; margin-top:1.15rem; padding:.55rem .9rem; background:var(--lime); color:var(--ink); border-radius:.4rem; font-weight:800; text-decoration:none }
+    .hero a:focus-visible { outline-color:var(--lime) }
+    .hero figure { overflow:hidden; background:#edf0ee; color:var(--ink); border-radius:.65rem }
+    .hero img { width:100%; aspect-ratio:1.4; object-fit:cover }
+    figcaption { padding:.55rem .75rem; font-size:.86rem }
+    .section { padding-block:clamp(1.6rem,4.7vw,3.5rem); border-bottom:1px solid var(--line) }
+    .heading { margin-bottom:1rem }
+    .heading .label { color:var(--green); margin-bottom:.3rem }
+    .heading p:last-child:not(.label) { margin-top:.4rem; color:var(--muted) }
+    .categories,.photos,.articles { display:grid; gap:.6rem; padding:0; margin:0; list-style:none }
+    .categories { grid-template-columns:repeat(5,minmax(0,1fr)) }
+    .categories a { display:grid; gap:.2rem; height:100%; padding:.75rem; background:var(--white); border:1px solid var(--line); border-radius:.5rem; text-decoration:none; overflow-wrap:anywhere }
+    .categories a:hover,.categories a:focus-visible { background:#e9f5d4 }
+    .categories .n { font-size:.76rem; font-weight:800; color:var(--green); font-variant-numeric:tabular-nums }
+    .categories small,.note { color:var(--muted) }
+    .quick { display:grid; grid-template-columns:1fr 1.65fr; gap:clamp(1rem,4vw,3rem); align-items:start }
+    .quick p { margin-top:.6rem }
+    table { width:100%; border-collapse:collapse; background:var(--white); font-size:.92rem }
+    th,td { padding:.65rem; border-bottom:1px solid var(--line); text-align:left; vertical-align:top }
+    thead th { background:var(--lime) }
+    tbody th { width:27% }
+    .photos { grid-template-columns:repeat(4,minmax(0,1fr)) }
+    .photos figure { height:100%; overflow:hidden; border:1px solid var(--line); border-radius:.55rem; background:var(--white) }
+    .photos img { width:100%; aspect-ratio:1; object-fit:contain; background:#f4f4f1 }
+    .articles { grid-template-columns:repeat(3,minmax(0,1fr)) }
+    article { padding:1rem; border:1px solid var(--line); border-radius:.55rem; background:var(--white) }
+    article .label { display:inline-block; padding:.16rem .45rem; background:var(--warm); border-radius:.25rem; margin-bottom:.7rem }
+    article h3+p { margin-top:.7rem }
+    article p+p { margin-top:.55rem }
+    details { background:var(--white); border:1px solid var(--line); border-radius:.45rem; margin:.55rem 0 }
+    summary { padding:.65rem .9rem; cursor:pointer; font-weight:750 }
+    details p { padding:0 .9rem .85rem; max-width:78ch }
+    .footer .wrap { padding-block:1.25rem; font-size:.88rem }
+    @media (max-width:55rem) {
+      .categories { grid-template-columns:repeat(3,minmax(0,1fr)) }
+      .articles { grid-template-columns:1fr }
+    }
+    @media (max-width:40rem) {
+      .hero .wrap,.quick { grid-template-columns:1fr }
+      .hero figure { max-width:26rem }
+      .categories,.photos { grid-template-columns:repeat(2,minmax(0,1fr)) }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"#guide",
+        "name":"JoyaGoo spreadsheet | Finds, Size Checks & QC Guide",
+        "description":"Browse 10 fashion categories with this JoyaGoo spreadsheet guide. Check product links, compare measurements, read QC photos and estimate your delivered cost.",
+        "inLanguage":"en",
+        "hasPart":[{"@id":"#link-guide"},{"@id":"#qc-guide"},{"@id":"#shipping-guide"},{"@id":"#faq"}]
+      },
+      {"@type":"Article","@id":"#link-guide","headline":"How to check JoyaGoo product links","inLanguage":"en","isPartOf":{"@id":"#guide"}},
+      {"@type":"Article","@id":"#qc-guide","headline":"How to read JoyaGoo QC photos","inLanguage":"en","isPartOf":{"@id":"#guide"}},
+      {"@type":"Article","@id":"#shipping-guide","headline":"How to make a JoyaGoo shipping estimate","inLanguage":"en","isPartOf":{"@id":"#guide"}},
+      {
+        "@type":"FAQPage",
+        "@id":"#faq",
+        "name":"JoyaGoo spreadsheet FAQ",
+        "inLanguage":"en",
+        "mainEntity":[
+          {
+            "@type":"Question","name":"What is a JoyaGoo spreadsheet?",
+            "acceptedAnswer":{"@type":"Answer","text":"A JoyaGoo spreadsheet is a community shopping index for finding and comparing items before using a purchasing agent. This guide links to HipobuyFind category pages for browsing."}
+          },
+          {
+            "@type":"Question","name":"What can I do if a JoyaBuy or JoyaGoo link is broken?",
+            "acceptedAnswer":{"@type":"Answer","text":"Look for the original marketplace item ID and search for that ID. If you find a live page, verify the seller and variant before relying on the old row."}
+          },
+          {
+            "@type":"Question","name":"Can QC photos verify authenticity?",
+            "acceptedAnswer":{"@type":"Answer","text":"QC photos can show visible condition, color, construction and measurements. Use documented provenance or an independent authentication service when authenticity matters."}
+          },
+          {
+            "@type":"Question","name":"How do I choose between two sneaker sizes?",
+            "acceptedAnswer":{"@type":"Answer","text":"Compare the listing’s size chart and a measured insole with the insole of a pair that fits you. Check width and toe room too, especially when changing models."}
+          },
+          {
+            "@type":"Question","name":"How can I compare shipping quotes fairly?",
+            "acceptedAnswer":{"@type":"Answer","text":"Use the same destination, packed dimensions and weight for each quote. Compare the billable weight and included services, and check which charges are collected separately."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/kxxel/">
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap">
+      <a class="wordmark" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <p class="label">Independent fashion shopping guide</p>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="guide" aria-labelledby="main-title">
+      <div class="wrap">
+        <div>
+          <p class="label">The fitting room</p>
+          <h1 id="main-title">JoyaGoo spreadsheet</h1>
+          <p class="intro">A JoyaGoo spreadsheet is a community shopping index. Use this JoyaGoo finds guide to browse 10 HipobuyFind categories, verify seller links and compare the measurements that matter before you order.</p>
+          <a class="button" href="https://www.hipobuyfind.com">Open HipobuyFind catalog&nbsp; ↗</a>
+        </div>
+        <figure>
+          <img src="https://static.nike.com/a/images/w_600,f_auto,q_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.png" width="600" height="750" fetchpriority="high" loading="eager" alt="Side profile of a white Nike Air Force 1 ’07 sneaker">
+          <figcaption><strong>Footwear reference</strong> · Nike Air Force 1 ’07</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <nav class="section wrap" aria-labelledby="category-title">
+      <div class="heading">
+        <p class="label">01 / Browse</p>
+        <h2 id="category-title">Choose a fashion category</h2>
+      </div>
+      <ul class="categories">
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html"><span class="n" aria-hidden="true">01</span><strong>Shoes</strong><small>Sneaker fit and insole length</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><span class="n" aria-hidden="true">02</span><strong>Hoodies/Sweaters</strong><small>Chest width and sleeve length</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html"><span class="n" aria-hidden="true">03</span><strong>T-Shirts</strong><small>Shoulder width and fabric weight</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html"><span class="n" aria-hidden="true">04</span><strong>Jackets</strong><small>Layering room and zipper finish</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><span class="n" aria-hidden="true">05</span><strong>Pants/Shorts</strong><small>Waist, rise and inseam</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html"><span class="n" aria-hidden="true">06</span><strong>Headwear</strong><small>Cap circumference and closure</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html"><span class="n" aria-hidden="true">07</span><strong>Sets</strong><small>Matching pieces and separate sizing</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><span class="n" aria-hidden="true">08</span><strong>Underwear/underpants</strong><small>Waistband stretch and fabric</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html"><span class="n" aria-hidden="true">09</span><strong>Jersey</strong><small>Chest fit and lettering placement</small></a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html"><span class="n" aria-hidden="true">10</span><strong>Accessories</strong><small>Bracelet fit and hardware</small></a></li>
+      </ul>
+    </nav>
+
+    <section class="section wrap quick" aria-labelledby="fit-title">
+      <div class="heading">
+        <p class="label">02 / Compare fit</p>
+        <h2 id="fit-title">Measure something you already wear</h2>
+        <p>Use centimeters and match the seller’s measuring method. Record the reference measurement beside the listed size so you can compare options later.</p>
+      </div>
+      <table aria-labelledby="fit-title">
+        <thead><tr><th scope="col">Item</th><th scope="col">What to compare</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Sneakers</th><td>Measure a removable insole from heel to toe and note its widest point. Compare with the same measurements for the listed pair.</td></tr>
+          <tr><th scope="row">Tops</th><td>Lay a favorite piece flat. Measure pit to pit and shoulder seam to hem. Check whether the seller lists flat width or full circumference.</td></tr>
+          <tr><th scope="row">Bottoms</th><td>Measure the waistband flat without stretching it, then record the front rise and inseam.</td></tr>
+          <tr><th scope="row">Accessories</th><td>Compare your wrist circumference with the bracelet’s stated fit range. Check cap size with the strap adjusted to its midpoint.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section wrap" aria-labelledby="photo-title">
+      <div class="heading">
+        <p class="label">03 / Visual references</p>
+        <h2 id="photo-title">Four details worth a closer look</h2>
+        <p>These brand photos illustrate design details. Catalog stock and the condition of an individual item should be checked separately.</p>
+      </div>
+      <div class="photos">
+        <figure>
+          <img src="https://us.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-gradient-hoodie--HNN45WUSO904_PM2_Front%20view.jpg?wid=480&amp;fmt=webp" width="490" height="490" loading="lazy" decoding="async" alt="Front view of a black Louis Vuitton Monogram Gradient hoodie">
+          <figcaption><strong>Louis Vuitton hoodie</strong><br>Compare motif placement and hem shape.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Beige Gucci GG canvas cap with a curved brim">
+          <figcaption><strong>Gucci canvas cap</strong><br>Check brim curvature and panel seams.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Cream enamel Hermès Clic H bracelet with a gold-tone H clasp">
+          <figcaption><strong>Hermès Clic H bracelet</strong><br>Look at the clasp and enamel edges.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/3SN279ZRDH868_SBG_E02-4?$r4x5_raw$&amp;crop=0,0,4000,5000&amp;wid=355&amp;hei=444&amp;scale=0.2219&amp;bfc=on&amp;qlt=80" width="355" height="444" loading="lazy" decoding="async" alt="Side view of a gray Dior B30 Countdown sneaker with a CD side motif">
+          <figcaption><strong>Dior B30 Countdown</strong><br>Compare the mesh panels and outsole profile.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="articles-title">
+      <div class="heading">
+        <p class="label">04 / Field notes</p>
+        <h2 id="articles-title">Three checks before you order</h2>
+      </div>
+      <div class="articles">
+        <article id="link-guide">
+          <p class="label">Product links</p>
+          <h3>How to check JoyaGoo product links</h3>
+          <p>Open the live listing and match the seller, marketplace item ID, model, color and size to your shortlist. A Taobao, Weidian or 1688 link may lead to a page with multiple variants, so confirm which one is selected.</p>
+          <p>If an old JoyaBuy link stops working, look for the original listing ID. If you find a replacement listing, save it as a new entry and recheck its measurements and photos.</p>
+        </article>
+        <article id="qc-guide">
+          <p class="label">Quality control</p>
+          <h3>How to read JoyaGoo QC photos</h3>
+          <p>Quality-control (QC) photos can help you inspect the visible condition of the item photographed. Check whether the photos are of your warehouse item, a seller sample or a previous order.</p>
+          <p>For shoes, request both sides, the outsole and an insole measurement if those views are missing. For clothing, compare the label, seam finish and measured width. Ask about the return window while the item is still at the warehouse.</p>
+        </article>
+        <article id="shipping-guide">
+          <p class="label">Delivered cost</p>
+          <h3>How to make a JoyaGoo shipping estimate</h3>
+          <p>Record the item cost, domestic delivery, any service fees and the international quote. Ask for the packed dimensions and compare actual weight with the route’s billable weight.</p>
+          <p>For a US, UK or EU delivery, enter the exact destination and postcode before comparing quotes. Confirm the currency and check whether taxes, duties or handling fees are collected separately.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="faq" aria-labelledby="faq-title">
+      <div class="heading">
+        <p class="label">05 / Quick answers</p>
+        <h2 id="faq-title">JoyaGoo spreadsheet FAQ</h2>
+      </div>
+      <details open>
+        <summary>What is a JoyaGoo spreadsheet?</summary>
+        <p>A JoyaGoo spreadsheet is a community shopping index for finding and comparing items before using a purchasing agent. This guide links to HipobuyFind category pages for browsing.</p>
+      </details>
+      <details>
+        <summary>What can I do if a JoyaBuy or JoyaGoo link is broken?</summary>
+        <p>Look for the original marketplace item ID and search for that ID. If you find a live page, verify the seller and variant before relying on the old row.</p>
+      </details>
+      <details>
+        <summary>Can QC photos verify authenticity?</summary>
+        <p>QC photos can show visible condition, color, construction and measurements. Use documented provenance or an independent authentication service when authenticity matters.</p>
+      </details>
+      <details>
+        <summary>How do I choose between two sneaker sizes?</summary>
+        <p>Compare the listing’s size chart and a measured insole with the insole of a pair that fits you. Check width and toe room too, especially when changing models.</p>
+      </details>
+      <details>
+        <summary>How can I compare shipping quotes fairly?</summary>
+        <p>Use the same destination, packed dimensions and weight for each quote. Compare the billable weight and included services, and check which charges are collected separately.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <p class="note">Independent editorial guide. Brand images are used as style references.</p>
+      <a class="wordmark" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    </div>
+  </footer>
+</body>
+</html>
